@@ -138,12 +138,4 @@ constexpr ctti::detail::cstring nameof_value_v = ctti::nameof<T, Value>();
 
 }
 
-namespace std
-{
-constexpr ctti::detail::cstring ctti_nameof(ctti::type_tag<std::string>)
-{
-    return "std::string";
-}
-}
-
 #endif // CTTI_NAMEOF_HPP
